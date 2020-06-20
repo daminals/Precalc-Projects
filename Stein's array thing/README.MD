@@ -1,0 +1,3 @@
+Between the numbers 1-100, there is a simple way to add up all the numbers in between. This is because, between these numbers, we are able to pair the numbers with their ‘opposites’ and multiply by pair numbers. For instance, 100 is paired with 1, adding up to 101. Then, 2 would be paired with 99, once again totalling 101. The pattern continues for 100/2, or 50. Therefore, we are able to attain the sum of these numbers through the equation(written in python) Solution = (n[0] + n[len(n)-1]) * (len(n)/2), where n is the array for all numbers. In this case, after plugging in the numbers, the solution is 5050.
+
+<img src=''
