@@ -3,7 +3,14 @@
 # Daniel Kogan, 6/24/2020
 
 def main():
-    def fib_sequence(n):
+
+    def eff_fib_seq(n): # Fibonacci sequence utilizing dynamic programming
+        values = [0,1]
+        while len(values) < n:
+            values.append(values[-1] + values[-2])
+        return values
+
+    def fib_sequence(n): # Fibonacci sequence utilizing recursion
         if n == 1:
             return 1
         elif n == 0:
@@ -11,14 +18,15 @@ def main():
         else:
             return fib_sequence(n-1) + fib_sequence(n-2)
 
-    def sequence_func(index):
+    def sequence_func(index): # Places the inefficient fibonacci sequence calcution into an array
         seq = []
         for i in range(index):
             seq.append(fib_sequence(i))
         return seq
 
 
-    print(sequence_func(15))
+    print(eff_fib_seq(1000))
+    #print(sequence_func(50))
 
 if __name__ == '__main__':
     main()
