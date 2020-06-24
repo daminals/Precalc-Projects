@@ -1,4 +1,5 @@
 # fib.py
+# fibonacci sequence
 # Daniel Kogan, 6/24/2020
 
 def main():
