@@ -5,7 +5,6 @@ def main():
         def __init__(self,name,sound):
             self.name=name
             self.sound=sound
-        # write your class here
         def Animal_details(self):
             print('Name: ' + self.name)
             print('Sound: ' + self.sound)
@@ -15,7 +14,6 @@ def main():
         def __init__(self,name,sound,family):
             super().__init__(name,sound)
             self.family = family
-        # write your class here
         def Animal_details(self):
             super().Animal_details()
             print('Family: ' + self.family)
@@ -26,7 +24,6 @@ def main():
         def __init__(self,name,sound,color):
                 super().__init__(name,sound)
                 self.color = color
-            # write your class here
         def Animal_details(self):
             super().Animal_details()
             print('Color: ' + self.color)
