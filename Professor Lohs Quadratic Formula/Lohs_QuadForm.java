@@ -58,10 +58,21 @@ class QuadForm{
           return Arrays.equals(a,b);
      }
 
-     public static void main (String str[]) throws IOException {
+     static void CompTest(int amount){
+          float a,b,c;
+          //This tests for a specified amount:
+          for (int i=1; i<= amount; i++) {
+               a = 1; b = i; c=2*i;
+               //System.out.println(Arrays.toString(QuadForm(a, b, c)));
+               //System.out.println(Arrays.toString(LohForm(a, b, c)));
+               System.out.println(compare(QuadForm(a,b,c),LohForm(a,b,c)));
+          }
+
+     }
+
+     static void solveIndiv(){
           float a,b,c,Z,b2;
 
-          /*
           // This uses the method to actually solve Quadratic Equations
 
           Scanner scan = new Scanner (System.in);
@@ -98,18 +109,16 @@ class QuadForm{
                System.out.println(strSol[0]);
                System.out.println(strSol[1]);
           }
-          */
+     }
+
+     public static void main (String str[]) throws IOException {
+          float a,b,c,Z,b2;
+
+          //solveIndiv();
+
+          //CompTest(1000);
 
 
-          /*
-           //This tests for a specified amount:
-          for (int i=1; i<= 10000; i++) {
-               a = 1; b = i; c=2*i;
-               //System.out.println(Arrays.toString(QuadForm(a, b, c)));
-               //System.out.println(Arrays.toString(LohForm(a, b, c)));
-               System.out.println(compare(QuadForm(a,b,c),LohForm(a,b,c)));
-          }
-          */
 
           int i = 1;
           while (true){
