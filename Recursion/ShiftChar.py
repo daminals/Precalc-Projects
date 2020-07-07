@@ -20,7 +20,6 @@ def main():
             return Shift_rec(str[-1]+str[:-1],char-1)
         else:
             return Shift_rec(str[1:] + str[0],char+1)
-            
 
     print(Shift('abcd',3))
     print(Shift_rec('abcd',3))

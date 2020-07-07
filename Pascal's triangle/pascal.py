@@ -34,7 +34,7 @@ def comparison(term_number):
     return recursive_func(term_number) == explicit_func(term_number)
 
 
-#for x in range(1, 10):
-#    print(comparison(x))
+for x in range(1, 100000):
+    print(comparison(x))
 
 #print([explicit_func(2),explicit_func(3),explicit_func(4),explicit_func(5),explicit_func(6),explicit_func(7)])
